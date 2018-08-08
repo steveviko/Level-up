@@ -1,43 +1,66 @@
 <!Doctype html>
 <html>
     <head>
-    <meta charset="utf-8" >
-    
-  
-    <title>Uber</title>
-    
-    <link rel="stylesheet" href="main.css">
-    
+        <meta charset="utf-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <link rel="stylesheet" href="main.css">
+        <title>Uber</title>     
     </head>
-    <body>
-        <div id="app_wrapper">
-            <div id="app_header">
-             <img class="logo" src="images/logo.png" />
-            </div>
-            <div id="app_content">
-                <div class="main_content"> 
-                    <div class="heading">Sign Up to Ride</div>
-                    <div class="slogan">Safe, reliable rides in minutes</div>
-                    <div class="container_label> 
-                    <div class="field1">
-                        <label id="input-label-firstName" class="label" for="firstName"> First name (required) </label>
-                        <input id="firstName" name="firstName" type="text"  class="inputfield" placeholder="First name"  >
+        <body>
+            <div id="app_wrapper">
+                <div id="app_header">
+                    <div class="logo">UBER</div>
+                </div>
+                <div id="app_content">
+                    <div class="main_content">
+                        <form id="generalform"  method="POST" action="">
+                            <div class="heading">Sign Up to Ride</div>
+                            <div class="slogan">Safe, reliable rides in minutes</div>
+                            <div class="field_container">
+                                <div class="field"> 
+                                    <label  class="label" for="firstName"> First name (required) </label>
+                                    <input type="text" name="FirstName" id="FirstName" class="inputfield" size="26" placeholder="First Name" />                            
+                                </div>
+                                <div class="field"> 
+                                    <label class="label" for="lasstName"> Last name (required) </label>
+                                    <input type="text" name="LastName" id="LastName" class="inputfield"size="28" placeholder="Last Name" />                            
+                                </div>
+                            </div>
+                            <div class="phone_number">
+                                <label  class="label" id="mobile" for="mobile"> Enter your phone number (required) </label>
+                            </div>
+                            <div aria-label="Select your country code" class="">
+                                <div class="container_country_code">
+                                    <select aria-hidden="true" class="countryCode" name="countryCode">
+                                        <option role="option" selected="" value="+256">+256 &nbsp; Uganda</option>
+                                        <option role="option" selected="" value="+254">+254 &nbsp;Dominican Republic</option>
+                                        <option role="option" selected="" value="+176">+176 Canada</option>
+                                        <option role="option" selected="" value="+277">+277 &nbsp;United States</option>
+                                        
+                                        </select>
+                                        <input aria-label="Enter your phone number" placeholder="Phone number" type="number" name="phoneNumber" id="mobile" class="input_phone_number" value="" aria-describedby="error-caption-mobile form-title input-label-mobile" aria-required="true" autofocus="on" />
+                                </div>
+                            </div>
+                            <div class="feild_container">
+                                <div class="">
+                                    <label for="email" class="label2">Enter your email (required)</label>
+                                    <input type="email" class="inputfield2" id="email" name="email" placeholder="Email"/>
+                                </div>
+                                <div class="">
+                                    <label for="password" class="label2">Enter a password (required)</label>
+                                    <input type="password" class="inputfield2" id="password" placeholder="Password" name="password" />
+                                    
+                                </div>                                
+                            </div>
+                            <div class="feild_container">
+                                <button class="button" type="submit">Sign Up</button>
+                            </div>
+                        </form>
                     </div>
-                    <div class="field2">
-                            <label id="input-label-lastName" class="label" for="lastName"> Last Name (required) </label>
-                            <input id="lastName" name="lastName" type="text"  class="inputfield" placeholder="Last Name"  >
-                    </div>
+                    <div class="footer">
+                            By clicking "Sign Up", you agree to Uber's <a href="#">Terms of Use</a> and acknowledge you have read the <a href="#">Privacy Policy</a>.
+                    </div>              
                 </div>
-                </div>
-                    
-                </div>
-                
-
             </div>        
-
-
-        </div>
-    
-
-    </body>
+        </body>
 </html>

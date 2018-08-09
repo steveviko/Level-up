@@ -202,3 +202,18 @@ input, textarea, select, button {
     font-size: 80%;
     padding-top: 3%;
 }
+
+@media only screen and (min-width:150px) and (max-width:600px){
+
+    .app_heder{
+        width:100%;
+
+    }
+}
+@media screen and (max-width: 450px){
+    #app_wrapper {
+        width:100%;
+        margin:auto;
+    }
+
+}

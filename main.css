@@ -206,14 +206,29 @@ input, textarea, select, button {
 @media only screen and (min-width:150px) and (max-width:600px){
 
     .app_heder{
-        width:100%;
+        width:1;
+        
 
     }
 }
 @media screen and (max-width: 450px){
     #app_wrapper {
-        width:100%;
-        margin:auto;
+        width: 40%;
+        padding:3%;
+    }
+
+    .app_heder{
+
+              
+    
+    }
+
+    .logo{
+        margin-left: -27px;
+        padding: 25px 5px;
+        top: 12px;
+        text-align: center;
+        left: 50%;
     }
 
 }

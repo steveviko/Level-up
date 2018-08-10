@@ -1,12 +1,12 @@
 import unittest
-from app.app import Signup
+from signup_app import Signup
 
 
 class TestingSignup(unittest.TestCase):
 
     def setUp(self):        
-        self.FirstUser = Signup('Ronnie', 'numusa', 'musa@yahoo.com')
-        self.SecondUser =Signup('steve','opio', 'stevenviko@gmail.com')
+        self.FirstUser =Signup('steve','opio', 'stevenviko@gmail.com')
+        self.SecondUser = Signup('Ronnie', 'numusa', 'musa@yahoo.com')
         
 
     def test_class_creation(self):
@@ -21,7 +21,7 @@ class TestingSignup(unittest.TestCase):
 
     def test_submit(self):         
         result = self.FirstUser.submit()
-        self.assertEqual(result, [{'FirstName':'steve','LastName':'OPIO', 'email':'stevenviko@gmail.com'}])
+        self.assertEqual(result, [{'FirstName':'steve','LastName':'opio', 'email':'stevenviko@gmail.com'}])
         self.assertIsInstance(result, list)
 
     def test_validate_email(self):         

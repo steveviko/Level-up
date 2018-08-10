@@ -1,0 +1,6 @@
+[
+  "tests_signup.py::TestingSignup::test_Full_Names",
+  "tests_signup.py::TestingSignup::test_class_creation",
+  "tests_signup.py::TestingSignup::test_submit",
+  "tests_signup.py::TestingSignup::test_validate_email"
+]

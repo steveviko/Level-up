@@ -1,9 +1,9 @@
 import re
-class Signup():
+class Signup(object):
     def __init__(self, FirstName, LastName, email_addr):
         self.FirstName = str(FirstName)
         self.LastName = str(LastName)
-        self.email_addr = Signup.validate_email(email_addr)
+        self.email_addr = Signup.validate_email(email_addr)        
         self.User_db= []
 
     def Full_Names(self):
@@ -21,7 +21,7 @@ class Signup():
             self.User_db.append(self.users)
             return self.User_db
 
-
+   
     @staticmethod
     def validate_email(email):
         if not re.match(r"[^@]+@[^@]+\.[^@]+", email):
@@ -31,4 +31,4 @@ class Signup():
 
 
 
-    
+   

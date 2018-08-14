@@ -28,5 +28,4 @@ class TestingSignup(unittest.TestCase):
         result = self.FirstUser.validate_email('musa@yahoo.com')
         self.assertTrue(result)
 
-if __name__ =='__main__':
-    unittest.main()
+
